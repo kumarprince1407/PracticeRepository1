@@ -1,0 +1,37 @@
+//October 17
+
+Confirm
+
+Syntax: result = confirm(question);
+
+The function 'confirm' shows a modal window sith a question and two buttons: OK and Cancel.
+The result is true of OK is pressed and false otherwise.
+
+For example:
+let isBoss = confirm("Are you the boss?");
+alert (isBoss); //true if OK is pressed
+
+Logical operators
+The precedence of AND(&&) operators is higher than OR(||).
+
+The precedence of NOT ! is the highest of all logical operators,
+so it always executes first, before && or ||.
+
+//October 18
+
+The important difference between || and && is that:
+
+|| returns the first truthy value.
+?? returns the first defined value.
+
+For example: 
+let height = 0;
+
+alert(height || 100); // 100
+alert(height ?? 100); // 0
+
+
+Default values
+
+If a function is called, but an argument is not provided, then the corresponding value becomes undefined.
+
