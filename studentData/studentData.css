@@ -1,0 +1,204 @@
+body{
+    background-color: rgb(200, 211, 214);
+}
+
+#sticky-header{
+    position: sticky;
+    top:0;
+    background-color: rgb(33, 33, 71);
+    z-index: 2;/* Ensure the header appears on top of other content */
+    width: 100%;
+}
+
+#sticky-header nav ul {
+    list-style: none;
+    padding: 1%;
+    margin: 1%;
+    display: flex;/*Display the items horizontally*/
+    
+}
+
+#sticky-header nav li{
+    /* margin: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+#sticky-header a{
+    text-decoration: none;
+    color: white;
+}
+
+.mainContainer{
+    padding: 10px;
+    max-height: 150vh; 
+    
+    overflow-y: auto; /*Add vertical scrollbar if content overflows */
+    
+}
+
+.heading{
+    height: 80px;
+    background-color: rgb(169, 197, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: blue;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container1{
+    background-color: rgb(221, 224, 235);
+    display: flex;
+    border: 1px solid black;
+    /* height: 75vh; */
+    /* width: 100vh; */
+    margin-bottom: 20px; 
+    padding: 10px;
+    width: 70%; 
+    border-radius: 2px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container2{
+    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    
+}
+
+.form-group label{
+    width: 150px;
+    margin-right: 10px;
+}
+
+#textarea1{
+    height: 25px;
+    width: 60vh;
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#submit {
+     width: 100px; 
+    height: 30px;
+    
+}
+
+#cancel{
+     width: 100px; 
+    height: 30px;
+    
+}
+
+#textarea2{
+    height: 50px;
+    width: 60vh;
+}
+
+.line{
+    margin-top: 2vh;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.container3{
+    margin-top: 20px;
+    border: 1px solid black;
+    display: flex;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    /* border-collapse: collapse; */
+}
+
+table th,
+table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+table thead th {
+    background-color: rgb(80, 83, 99);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: none;
+}
+
+/*Media query for iPhone XR*/
+@media (max-width: 414px) and (max-height: 896px){
+
+    .mainContainer{
+        padding: 0px;
+    }
+
+    .heading{
+        height: 40px;
+        font-size: small;
+    }
+    
+    .container2{
+    
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 15px;
+        
+    }
+
+    .form-group {
+        margin-bottom: 2px;  
+    }
+
+    .container1{
+        
+        margin-bottom: 10px; 
+        
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        width: 95%; 
+        border-radius: 2px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .container3{
+        margin-top: 5px;
+        border: 1px solid black;
+        display: flex;
+        font-size: small;
+    }
+    table th,
+table td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+}
